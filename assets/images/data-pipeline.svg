@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pipeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="50%" stop-color="#111c33"/>
+      <stop offset="100%" stop-color="#080c14"/>
+    </linearGradient>
+    <linearGradient id="azureBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0078d4"/>
+      <stop offset="100%" stop-color="#00f2fe"/>
+    </linearGradient>
+    <filter id="pipeGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="pipeGrid" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="rgba(255,255,255,0.025)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#pipeBg)"/>
+  <rect width="800" height="450" fill="url(#pipeGrid)"/>
+
+  <!-- Top App Window Header -->
+  <rect x="25" y="20" width="750" height="36" rx="8" fill="#131e36" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <circle cx="45" cy="38" r="5" fill="#ef4444"/>
+  <circle cx="62" cy="38" r="5" fill="#f59e0b"/>
+  <circle cx="79" cy="38" r="5" fill="#10b981"/>
+  <text x="105" y="42" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#94a3b8">DEPI Data Engineering • Automated Python ETL Data Pipeline</text>
+  <rect x="630" y="28" width="130" height="20" rx="10" fill="rgba(0,120,212,0.15)" stroke="#0078d4" stroke-width="1"/>
+  <circle cx="642" cy="38" r="3.5" fill="#00f2fe"/>
+  <text x="652" y="42" font-family="sans-serif" font-size="10" font-weight="700" fill="#38bdf8">ETL PIPELINE ACTIVE</text>
+
+  <!-- Left DAG Pipeline Architecture View -->
+  <rect x="25" y="68" width="460" height="355" rx="10" fill="#0b1222" stroke="rgba(0,120,212,0.25)" stroke-width="1"/>
+  <text x="45" y="98" font-family="sans-serif" font-size="14" font-weight="700" fill="#e2e8f0">Automated Data Ingestion &amp; Transformation Workflow</text>
+  <text x="45" y="115" font-family="sans-serif" font-size="11" fill="#64748b">End-to-End Python pipelines, data cleansing &amp; SQL staging</text>
+
+  <!-- Flow Connector Lines -->
+  <!-- Step 1 to Step 2 -->
+  <path d="M 120 180 L 195 180" fill="none" stroke="#00f2fe" stroke-width="2.5" stroke-dasharray="5,3"/>
+  <polygon points="195,176 203,180 195,184" fill="#00f2fe"/>
+
+  <!-- Step 2 to Step 3 -->
+  <path d="M 285 180 L 360 180" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="5,3"/>
+  <polygon points="360,176 368,180 360,184" fill="#38bdf8"/>
+
+  <!-- Step 3 to Step 4 (downwards) -->
+  <path d="M 405 215 L 405 285 L 365 285" fill="none" stroke="#10b981" stroke-width="2.5"/>
+  <polygon points="365,281 357,285 365,289" fill="#10b981"/>
+
+  <!-- Step 4 to Step 5 (leftwards) -->
+  <path d="M 235 285 L 175 285" fill="none" stroke="#10b981" stroke-width="2.5" stroke-dasharray="5,3"/>
+  <polygon points="175,281 167,285 175,289" fill="#10b981"/>
+
+  <!-- Pipeline Stage Nodes -->
+  <!-- Stage 1: Raw Ingestion -->
+  <rect x="45" y="145" width="75" height="70" rx="8" fill="#1e293b" stroke="#64748b" stroke-width="1.5"/>
+  <text x="82" y="172" font-family="sans-serif" font-size="20" text-anchor="middle">📥</text>
+  <text x="82" y="193" font-family="sans-serif" font-size="10" font-weight="700" fill="#e2e8f0" text-anchor="middle">Raw Data</text>
+  <text x="82" y="206" font-family="sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">CSV/API/JSON</text>
+
+  <!-- Stage 2: Data Cleaning -->
+  <rect x="205" y="145" width="80" height="70" rx="8" fill="#13233a" stroke="#00f2fe" stroke-width="1.5" filter="url(#pipeGlow)"/>
+  <text x="245" y="172" font-family="sans-serif" font-size="20" text-anchor="middle">🧹</text>
+  <text x="245" y="193" font-family="sans-serif" font-size="10" font-weight="700" fill="#38bdf8" text-anchor="middle">Cleaning</text>
+  <text x="245" y="206" font-family="sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">Nulls &amp; Outliers</text>
+
+  <!-- Stage 3: Transformation -->
+  <rect x="370" y="145" width="80" height="70" rx="8" fill="#13233a" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="410" y="172" font-family="sans-serif" font-size="20" text-anchor="middle">⚙️</text>
+  <text x="410" y="193" font-family="sans-serif" font-size="10" font-weight="700" fill="#93c5fd" text-anchor="middle">Transform</text>
+  <text x="410" y="206" font-family="sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">Schemas &amp; Types</text>
+
+  <!-- Stage 4: MySQL Staging -->
+  <rect x="245" y="250" width="110" height="70" rx="8" fill="#13233a" stroke="#10b981" stroke-width="1.5"/>
+  <text x="300" y="277" font-family="sans-serif" font-size="20" text-anchor="middle">🗄️</text>
+  <text x="300" y="298" font-family="sans-serif" font-size="10" font-weight="700" fill="#6ee7b7" text-anchor="middle">MySQL Warehouse</text>
+  <text x="300" y="311" font-family="sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">Normalized Tables</text>
+
+  <!-- Stage 5: BI & Analytics Mart -->
+  <rect x="55" y="250" width="110" height="70" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="110" y="277" font-family="sans-serif" font-size="20" text-anchor="middle">📊</text>
+  <text x="110" y="298" font-family="sans-serif" font-size="10" font-weight="700" fill="#fcd34d" text-anchor="middle">Analytics &amp; BI</text>
+  <text x="110" y="311" font-family="sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">Clean Insights</text>
+
+  <!-- Pipeline Health Live Banner -->
+  <rect x="45" y="350" width="415" height="52" rx="8" fill="rgba(16,185,129,0.08)" stroke="rgba(16,185,129,0.25)" stroke-width="1"/>
+  <circle cx="65" cy="376" r="6" fill="#10b981" filter="url(#pipeGlow)"/>
+  <text x="82" y="372" font-family="sans-serif" font-size="11" font-weight="700" fill="#6ee7b7">Pipeline Status: 100% HEALTHY</text>
+  <text x="82" y="390" font-family="sans-serif" font-size="9" fill="#94a3b8">Processed 1,250,000+ records • 0 Schema Errors • Scheduled Daily</text>
+
+  <!-- Right Metrics Column -->
+  <!-- Card 1: Initiative Info -->
+  <rect x="500" y="68" width="275" height="105" rx="10" fill="#0b1222" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="518" y="93" font-family="sans-serif" font-size="11" font-weight="600" fill="#94a3b8">PROGRAM SPONSORSHIP</text>
+  <text x="518" y="125" font-family="sans-serif" font-size="20" font-weight="800" fill="#00f2fe">Microsoft DEPI</text>
+  <text x="518" y="145" font-family="sans-serif" font-size="11" fill="#38bdf8">Digital Egypt Pioneers Initiative</text>
+  <text x="518" y="162" font-family="sans-serif" font-size="10" fill="#64748b">Data Engineering Trainee • Feb 2026 - Present</text>
+
+  <!-- Card 2: Core Engineering Pillars -->
+  <rect x="500" y="188" width="275" height="110" rx="10" fill="#0b1222" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="518" y="213" font-family="sans-serif" font-size="11" font-weight="600" fill="#94a3b8">ENGINEERING HIGHLIGHTS</text>
+  <text x="518" y="244" font-family="sans-serif" font-size="18" font-weight="700" fill="#ffffff">Automated ETL &amp; SQL</text>
+  <text x="518" y="264" font-family="sans-serif" font-size="11" fill="#38bdf8">• Automated Python batch scripts</text>
+  <text x="518" y="282" font-family="sans-serif" font-size="11" fill="#38bdf8">• Relational schema design &amp; query tuning</text>
+
+  <!-- Card 3: Stack Tags -->
+  <rect x="500" y="313" width="275" height="110" rx="10" fill="#0b1222" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="518" y="336" font-family="sans-serif" font-size="11" font-weight="600" fill="#94a3b8">PIPELINE TECHNOLOGIES</text>
+  <g transform="translate(518, 350)">
+    <rect x="0" y="0" width="58" height="24" rx="5" fill="#1e293b"/>
+    <text x="29" y="16" font-family="sans-serif" font-size="10" font-weight="600" fill="#38bdf8" text-anchor="middle">Python</text>
+    
+    <rect x="66" y="0" width="75" height="24" rx="5" fill="#1e293b"/>
+    <text x="103" y="16" font-family="sans-serif" font-size="10" font-weight="600" fill="#00f2fe" text-anchor="middle">ETL Pipeline</text>
+    
+    <rect x="149" y="0" width="70" height="24" rx="5" fill="#1e293b"/>
+    <text x="184" y="16" font-family="sans-serif" font-size="10" font-weight="600" fill="#10b981" text-anchor="middle">MySQL</text>
+    
+    <rect x="0" y="30" width="90" height="24" rx="5" fill="#1e293b"/>
+    <text x="45" y="46" font-family="sans-serif" font-size="10" font-weight="600" fill="#fbbf24" text-anchor="middle">Data Cleaning</text>
+    
+    <rect x="98" y="30" width="115" height="24" rx="5" fill="#1e293b"/>
+    <text x="155" y="46" font-family="sans-serif" font-size="10" font-weight="600" fill="#ec4899" text-anchor="middle">Data Transformation</text>
+  </g>
+</svg>

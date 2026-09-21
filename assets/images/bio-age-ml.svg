@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bioBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#080c14"/>
+    </linearGradient>
+    <linearGradient id="purpleCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#00f2fe"/>
+    </linearGradient>
+    <filter id="bioGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <pattern id="bioGrid" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="rgba(255,255,255,0.025)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bioBg)"/>
+  <rect width="800" height="450" fill="url(#bioGrid)"/>
+
+  <!-- Top App Window Header -->
+  <rect x="25" y="20" width="750" height="36" rx="8" fill="#131c2e" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <circle cx="45" cy="38" r="5" fill="#ef4444"/>
+  <circle cx="62" cy="38" r="5" fill="#f59e0b"/>
+  <circle cx="79" cy="38" r="5" fill="#10b981"/>
+  <text x="105" y="42" font-family="'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#94a3b8">Jupyter ML Lab • Biological_Age_Estimation_Model.ipynb</text>
+  <rect x="630" y="28" width="130" height="20" rx="10" fill="rgba(168,85,247,0.15)" stroke="#a855f7" stroke-width="1"/>
+  <circle cx="642" cy="38" r="3.5" fill="#a855f7"/>
+  <text x="652" y="42" font-family="sans-serif" font-size="10" font-weight="700" fill="#c084fc">ML MODEL READY</text>
+
+  <!-- Left Chart Panel (Scatter & Regression) -->
+  <rect x="25" y="68" width="460" height="355" rx="10" fill="#0b111e" stroke="rgba(168,85,247,0.2)" stroke-width="1"/>
+  <text x="45" y="98" font-family="sans-serif" font-size="14" font-weight="700" fill="#e2e8f0">Biomarker Health Regression &amp; Prediction Curve</text>
+  <text x="45" y="115" font-family="sans-serif" font-size="11" fill="#64748b">Chronological Age vs. Predicted Biological Age (Years)</text>
+
+  <!-- Coordinate Axes -->
+  <line x1="60" y1="360" x2="450" y2="360" stroke="#334155" stroke-width="1.5"/>
+  <line x1="60" y1="140" x2="60" y2="360" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Axis ticks & labels -->
+  <text x="50" y="375" font-family="sans-serif" font-size="9" fill="#64748b">20</text>
+  <text x="140" y="375" font-family="sans-serif" font-size="9" fill="#64748b">35</text>
+  <text x="235" y="375" font-family="sans-serif" font-size="9" fill="#64748b">50</text>
+  <text x="330" y="375" font-family="sans-serif" font-size="9" fill="#64748b">65</text>
+  <text x="425" y="375" font-family="sans-serif" font-size="9" fill="#64748b">80</text>
+  <text x="220" y="395" font-family="sans-serif" font-size="10" font-weight="600" fill="#94a3b8">Chronological Age (Years)</text>
+
+  <text x="38" y="360" font-family="sans-serif" font-size="9" fill="#64748b">20</text>
+  <text x="38" y="280" font-family="sans-serif" font-size="9" fill="#64748b">40</text>
+  <text x="38" y="200" font-family="sans-serif" font-size="9" fill="#64748b">60</text>
+  <text x="38" y="145" font-family="sans-serif" font-size="9" fill="#64748b">80</text>
+
+  <!-- Grid lines inside chart -->
+  <line x1="60" y1="280" x2="450" y2="280" stroke="rgba(255,255,255,0.04)" stroke-dasharray="3,3"/>
+  <line x1="60" y1="200" x2="450" y2="200" stroke="rgba(255,255,255,0.04)" stroke-dasharray="3,3"/>
+  <line x1="140" y1="140" x2="140" y2="360" stroke="rgba(255,255,255,0.04)" stroke-dasharray="3,3"/>
+  <line x1="235" y1="140" x2="235" y2="360" stroke="rgba(255,255,255,0.04)" stroke-dasharray="3,3"/>
+  <line x1="330" y1="140" x2="330" y2="360" stroke="rgba(255,255,255,0.04)" stroke-dasharray="3,3"/>
+
+  <!-- Ideal 1:1 line -->
+  <line x1="60" y1="360" x2="430" y2="145" stroke="#475569" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+  <!-- ML Regression Fitted Curve (Glowing Purple to Cyan) -->
+  <path d="M 60 355 C 150 310, 240 240, 430 148" fill="none" stroke="url(#purpleCyan)" stroke-width="3" filter="url(#bioGlow)"/>
+
+  <!-- Health Biomarker Scatter Data Points -->
+  <circle cx="85" cy="342" r="3.5" fill="#00f2fe" opacity="0.8"/>
+  <circle cx="110" cy="325" r="4" fill="#a855f7" opacity="0.85"/>
+  <circle cx="130" cy="305" r="3" fill="#00f2fe" opacity="0.7"/>
+  <circle cx="155" cy="290" r="4" fill="#ec4899" opacity="0.9"/>
+  <circle cx="180" cy="272" r="3.5" fill="#a855f7" opacity="0.85"/>
+  <circle cx="210" cy="255" r="4" fill="#00f2fe" opacity="0.9"/>
+  <circle cx="240" cy="242" r="3" fill="#a855f7" opacity="0.75"/>
+  <circle cx="270" cy="228" r="4" fill="#ec4899" opacity="0.8"/>
+  <circle cx="295" cy="210" r="3.5" fill="#00f2fe" opacity="0.85"/>
+  <circle cx="320" cy="198" r="4" fill="#a855f7" opacity="0.9"/>
+  <circle cx="350" cy="182" r="3.5" fill="#00f2fe" opacity="0.8"/>
+  <circle cx="380" cy="168" r="4" fill="#ec4899" opacity="0.85"/>
+  <circle cx="410" cy="155" r="3.5" fill="#a855f7" opacity="0.9"/>
+
+  <!-- Target prediction highlight bubble -->
+  <circle cx="210" cy="255" r="9" fill="none" stroke="#00f2fe" stroke-width="2" filter="url(#bioGlow)"/>
+  <rect x="180" y="210" width="105" height="28" rx="5" fill="#1e293b" stroke="#00f2fe" stroke-width="1"/>
+  <text x="232" y="228" font-family="sans-serif" font-size="10" font-weight="700" fill="#00f2fe" text-anchor="middle">Age: 24.2 yrs</text>
+
+  <!-- Right Metrics Column -->
+  <!-- Card 1: Model Accuracy -->
+  <rect x="500" y="68" width="275" height="105" rx="10" fill="#0b111e" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="518" y="93" font-family="sans-serif" font-size="11" font-weight="600" fill="#94a3b8">MODEL R² ACCURACY SCORE</text>
+  <text x="518" y="132" font-family="sans-serif" font-size="34" font-weight="800" fill="#c084fc" filter="url(#bioGlow)">0.942</text>
+  <text x="635" y="122" font-family="sans-serif" font-size="11" font-weight="600" fill="#34d399">MAE: ±1.8 yrs</text>
+  <text x="635" y="138" font-family="sans-serif" font-size="10" fill="#64748b">High Precision Fit</text>
+
+  <!-- Card 2: Biomarkers Processed -->
+  <rect x="500" y="188" width="275" height="110" rx="10" fill="#0b111e" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="518" y="213" font-family="sans-serif" font-size="11" font-weight="600" fill="#94a3b8">HEALTH BIOMARKER FEATURES</text>
+  <text x="518" y="244" font-family="sans-serif" font-size="18" font-weight="700" fill="#ffffff">DNA &amp; Blood Profiling</text>
+  <text x="518" y="264" font-family="sans-serif" font-size="11" fill="#38bdf8">• Telomere length &amp; DNA methylation</text>
+  <text x="518" y="282" font-family="sans-serif" font-size="11" fill="#38bdf8">• Metabolic biomarkers &amp; Lipid profile</text>
+
+  <!-- Card 3: Stack Tags -->
+  <rect x="500" y="313" width="275" height="110" rx="10" fill="#0b111e" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="518" y="336" font-family="sans-serif" font-size="11" font-weight="600" fill="#94a3b8">ML TECHNOLOGIES USED</text>
+  <g transform="translate(518, 350)">
+    <rect x="0" y="0" width="58" height="24" rx="5" fill="#1e293b"/>
+    <text x="29" y="16" font-family="sans-serif" font-size="10" font-weight="600" fill="#38bdf8" text-anchor="middle">Python</text>
+    
+    <rect x="66" y="0" width="80" height="24" rx="5" fill="#1e293b"/>
+    <text x="106" y="16" font-family="sans-serif" font-size="10" font-weight="600" fill="#c084fc" text-anchor="middle">Scikit-Learn</text>
+    
+    <rect x="154" y="0" width="90" height="24" rx="5" fill="#1e293b"/>
+    <text x="199" y="16" font-family="sans-serif" font-size="10" font-weight="600" fill="#34d399" text-anchor="middle">Jupyter Lab</text>
+    
+    <rect x="0" y="30" width="65" height="24" rx="5" fill="#1e293b"/>
+    <text x="32" y="46" font-family="sans-serif" font-size="10" font-weight="600" fill="#fbbf24" text-anchor="middle">Pandas</text>
+    
+    <rect x="73" y="30" width="95" height="24" rx="5" fill="#1e293b"/>
+    <text x="120" y="46" font-family="sans-serif" font-size="10" font-weight="600" fill="#f472b6" text-anchor="middle">Health Datasets</text>
+  </g>
+</svg>

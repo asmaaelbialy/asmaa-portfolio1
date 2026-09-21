@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <defs>
+    <linearGradient id="avGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="avBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0b0f19"/>
+    </linearGradient>
+    <filter id="avGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="240" height="240" rx="120" fill="url(#avBg)"/>
+  <circle cx="120" cy="120" r="114" fill="none" stroke="url(#avGrad)" stroke-width="4" filter="url(#avGlow)"/>
+
+  <!-- Tech AI Avatar Silhouette / Monogram -->
+  <circle cx="120" cy="95" r="42" fill="#1e293b" stroke="#00f2fe" stroke-width="2"/>
+  <path d="M 55 200 C 55 155, 85 145, 120 145 C 155 145, 185 155, 185 200 Z" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+
+  <!-- Neural Net Nodes on Avatar -->
+  <circle cx="120" cy="95" r="8" fill="#00f2fe"/>
+  <circle cx="102" cy="85" r="4" fill="#38bdf8"/>
+  <circle cx="138" cy="85" r="4" fill="#38bdf8"/>
+  <line x1="102" y1="85" x2="120" y2="95" stroke="#00f2fe" stroke-width="1.5"/>
+  <line x1="138" y1="85" x2="120" y2="95" stroke="#00f2fe" stroke-width="1.5"/>
+  <line x1="120" y1="95" x2="120" y2="145" stroke="#00f2fe" stroke-width="1.5" stroke-dasharray="2,2"/>
+</svg>

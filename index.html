@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asmaa Mohamed Sadallah | AI & Data Engineering Portfolio</title>
+    <meta name="description" content="Portfolio of Asmaa Mohamed Sadallah - AI & Data Engineering Professional, Microsoft DEPI Trainee, Machine Learning & Python Specialist.">
+    <meta name="keywords" content="Asmaa Mohamed, Data Engineering, Artificial Intelligence, Machine Learning, Python, DEPI, Delta University, Portfolio">
+    <meta name="author" content="Asmaa Mohamed Sadallah">
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="Asmaa Mohamed | AI & Data Engineering Portfolio">
+    <meta property="og:description" content="Artificial Intelligence and Data Engineering portfolio showcasing AI models, data pipelines, and software projects.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Ambient Background Glows -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="brand-logo">
+                <span class="logo-bracket">&lt;</span>Asmaa<span class="logo-accent">.AI</span><span class="logo-bracket">/&gt;</span>
+            </a>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#certifications" class="nav-link">Certificates</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="mailto:asmaaelbyalley@gmail.com?subject=Opportunity%20Inquiry" class="btn btn-nav">
+                    <i class="fas fa-paper-plane"></i> Hire Me
+                </a>
+            </nav>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="status-badge">
+                        <span class="pulse-dot"></span>
+                        <span>Open to Opportunities • Microsoft DEPI Trainee</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Asmaa Mohamed</span>
+                    </h1>
+
+                    <div class="typewriter-container">
+                        <span class="typewriter-prefix">I build </span>
+                        <span class="typewriter-text" id="typewriter"></span>
+                        <span class="cursor">|</span>
+                    </div>
+
+                    <p class="hero-bio">
+                        Artificial Intelligence & Data Engineering student at Delta University. Skilled in 
+                        <strong>Python</strong>, <strong>Machine Learning</strong>, <strong>automated data pipelines (ETL)</strong>, 
+                        and database management. Turning complex data into scalable intelligence.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-project-diagram"></i> Explore Projects
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i> Get In Touch
+                        </a>
+                        <a href="https://linkedin.com/in/asmaa-elbialy" target="_blank" rel="noopener noreferrer" class="btn btn-outline" title="LinkedIn Profile">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/asmaaelbialy" target="_blank" rel="noopener noreferrer" class="btn btn-outline" title="GitHub Profile">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+
+                    <!-- Quick Stats Bar -->
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">4+</span>
+                            <span class="stat-label">Core Projects</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">4+</span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Tech Stack Tools</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">20%</span>
+                            <span class="stat-label">Route Optimization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="avatar-wrapper">
+                        <div class="avatar-ring"></div>
+                        <div class="avatar-frame">
+                            <img src="./WhatsApp Image 2026-09-20 at 8.44.59 PM.jpeg" 
+                                 alt="Asmaa Mohamed Sadallah" 
+                                 class="avatar-img"
+                                 onerror="this.onerror=null; this.src='assets/images/avatar.svg';">
+                        </div>
+                        <div class="floating-badge badge-ai">
+                            <i class="fas fa-brain"></i>
+                            <span>AI &amp; ML</span>
+                        </div>
+                        <div class="floating-badge badge-data">
+                            <i class="fas fa-database"></i>
+                            <span>Data Engineering</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#about" class="scroll-down-indicator" aria-label="Scroll to About Section">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="section about-section" id="about">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fas fa-user-astronaut"></i> Background</span>
+                    <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                    <p class="section-subtitle">A blend of academic AI foundation and real-world data engineering passion.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card main-about">
+                        <div class="about-card-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Passionate AI & Data Engineer</h3>
+                        <p>
+                            I am an Artificial Intelligence undergraduate at Delta University for Science and Technology (2024 – 2028). 
+                            My core technical focus bridges the gap between <strong>Data Engineering</strong> and <strong>Predictive Machine Learning</strong>.
+                        </p>
+                        <p>
+                            Currently training as a <strong>Microsoft Data Engineering Trainee</strong> within the prestigious 
+                            <em>Digital Egypt Pioneers Initiative (DEPI)</em>, where I architect data pipelines, automate cleaning workflows, 
+                            and engineer scalable relational databases.
+                        </p>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>End-to-End Data Processing &amp; Transformation</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Predictive Machine Learning &amp; Biomarker Analysis</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Smart Logistics &amp; Algorithmic Route Optimization</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-card education-card">
+                        <div class="about-card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="edu-badge">2024 – 2028 (Expected)</div>
+                        <h3>B.Sc. in Artificial Intelligence</h3>
+                        <h4>Delta University for Science and Technology</h4>
+                        <p class="edu-detail">
+                            <strong>Major:</strong> Artificial Intelligence<br>
+                            <strong>Self-Trained Focus:</strong> Data Engineering, Big Data Workflows &amp; Software Development.
+                        </p>
+                        <div class="edu-contribution">
+                            <i class="fas fa-users-cog"></i>
+                            <span>Active contributor in the <strong>Delta University AI Student Team</strong>, collaborating on campus tech innovations.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Skills Section -->
+        <section class="section skills-section" id="skills">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fas fa-microchip"></i> Capabilities</span>
+                    <h2 class="section-title">Core <span class="gradient-text">Skills</span></h2>
+                    <p class="section-subtitle">Technical stack and domains I leverage to solve engineering challenges.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Category 1: AI & ML -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon" style="color: #a855f7; background: rgba(168,85,247,0.1);">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>AI &amp; Machine Learning</h3>
+                        </div>
+                        <p class="category-desc">Building intelligent predictive models and data-driven algorithmic systems.</p>
+                        <div class="skill-pills">
+                            <span class="skill-pill">Machine Learning</span>
+                            <span class="skill-pill">Predictive Modeling</span>
+                            <span class="skill-pill">Biomarker Datasets</span>
+                            <span class="skill-pill">Scikit-Learn</span>
+                            <span class="skill-pill">Route Optimization</span>
+                            <span class="skill-pill">Model Evaluation</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 2: Data Engineering -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon" style="color: #00f2fe; background: rgba(0,242,254,0.1);">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <h3>Data Engineering &amp; DBs</h3>
+                        </div>
+                        <p class="category-desc">Designing robust ETL workflows, database schemas, and cleaning pipelines.</p>
+                        <div class="skill-pills">
+                            <span class="skill-pill">ETL Pipelines</span>
+                            <span class="skill-pill">Data Processing</span>
+                            <span class="skill-pill">Data Transformation</span>
+                            <span class="skill-pill">MySQL</span>
+                            <span class="skill-pill">Relational Databases</span>
+                            <span class="skill-pill">Data Cleaning</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 3: Programming Languages -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon" style="color: #3b82f6; background: rgba(59,130,246,0.1);">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <p class="category-desc">Clean, structured, and modular coding across systems and data scripts.</p>
+                        <div class="skill-pills">
+                            <span class="skill-pill"><i class="fab fa-python"></i> Python</span>
+                            <span class="skill-pill"><i class="fab fa-java"></i> Java</span>
+                            <span class="skill-pill"><i class="fas fa-database"></i> SQL</span>
+                            <span class="skill-pill"><i class="fab fa-js"></i> JavaScript</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 4: Web & Software -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon" style="color: #10b981; background: rgba(16,185,129,0.1);">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h3>Web &amp; Software Dev</h3>
+                        </div>
+                        <p class="category-desc">Crafting responsive front-end interfaces and database-backed desktop applications.</p>
+                        <div class="skill-pills">
+                            <span class="skill-pill">HTML5</span>
+                            <span class="skill-pill">CSS3</span>
+                            <span class="skill-pill">Responsive Design</span>
+                            <span class="skill-pill">Java Desktop GUI</span>
+                            <span class="skill-pill">CRUD Systems</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 5: Tools & Cybersecurity -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon" style="color: #f59e0b; background: rgba(245,158,11,0.1);">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Linux, Cyber &amp; Tools</h3>
+                        </div>
+                        <p class="category-desc">Secure system administration, version control, and collaborative environments.</p>
+                        <div class="skill-pills">
+                            <span class="skill-pill"><i class="fab fa-linux"></i> Linux Admin</span>
+                            <span class="skill-pill"><i class="fab fa-git-alt"></i> Git &amp; GitHub</span>
+                            <span class="skill-pill">VS Code</span>
+                            <span class="skill-pill">Jupyter Notebook</span>
+                            <span class="skill-pill">Threat Analysis</span>
+                            <span class="skill-pill">Network Protocols</span>
+                        </div>
+                    </div>
+
+                    <!-- Category 6: Professional Soft Skills -->
+                    <div class="skill-category-card">
+                        <div class="category-header">
+                            <div class="category-icon" style="color: #ec4899; background: rgba(236,72,153,0.1);">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Professional Dynamics</h3>
+                        </div>
+                        <p class="category-desc">Effective communication, iterative delivery, and agile cross-functional collaboration.</p>
+                        <div class="skill-pills">
+                            <span class="skill-pill">Team Collaboration</span>
+                            <span class="skill-pill">Time Management</span>
+                            <span class="skill-pill">Analytical Thinking</span>
+                            <span class="skill-pill">Autonomous Self-Learning</span>
+                            <span class="skill-pill">Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section (With Images & Interactive Filters) -->
+        <section class="section projects-section" id="projects">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fas fa-folder-open"></i> Portfolio Showcase</span>
+                    <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                    <p class="section-subtitle">Real-world AI systems, data engineering pipelines, and software applications with visual previews.</p>
+                </div>
+
+                <!-- Project Category Filters -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="ai">AI &amp; Machine Learning</button>
+                    <button class="filter-btn" data-filter="data">Data Engineering</button>
+                    <button class="filter-btn" data-filter="software">Software &amp; SQL</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    
+                    <!-- Project 1: Smart Bus System -->
+                    <div class="project-card" data-category="ai" data-project="bus">
+                        <div class="project-image-wrapper">
+                            <img src="assets/images/bus-system.svg" alt="Delta University Bus System AI Mockup" class="project-img">
+                            <div class="project-overlay">
+                                <button class="btn btn-sm btn-overlay open-modal-btn" data-project="bus">
+                                    <i class="fas fa-search-plus"></i> View Details
+                                </button>
+                            </div>
+                            <span class="project-badge badge-featured"><i class="fas fa-star"></i> AI Transportation</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-metric">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>-20% Route Planning Time</span>
+                            </div>
+                            <h3 class="project-title">Delta University Bus System</h3>
+                            <p class="project-desc">
+                                Collaborated with a 5-member team to design and develop an AI-powered smart campus transportation system, 
+                                optimizing daily student commute routes and scheduling operations.
+                            </p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>AI Routing</span>
+                                <span>Data Analytics</span>
+                                <span>Optimization</span>
+                            </div>
+                            <div class="project-footer">
+                                <button class="project-link-btn open-modal-btn" data-project="bus">
+                                    <span>Technical Specs</span> <i class="fas fa-arrow-right"></i>
+                                </button>
+                                <a href="https://github.com/asmaaelbialy" target="_blank" rel="noopener noreferrer" class="project-github-link" title="GitHub Repository">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Biological Age Estimation -->
+                    <div class="project-card" data-category="ai" data-project="bio">
+                        <div class="project-image-wrapper">
+                            <img src="assets/images/bio-age-ml.svg" alt="Biological Age Estimation ML System Mockup" class="project-img">
+                            <div class="project-overlay">
+                                <button class="btn btn-sm btn-overlay open-modal-btn" data-project="bio">
+                                    <i class="fas fa-search-plus"></i> View Details
+                                </button>
+                            </div>
+                            <span class="project-badge"><i class="fas fa-dna"></i> Predictive ML</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-metric">
+                                <i class="fas fa-bullseye"></i>
+                                <span>R² = 0.942 Predictive Fit</span>
+                            </div>
+                            <h3 class="project-title">Biological Age Estimation System</h3>
+                            <p class="project-desc">
+                                Built an automated predictive machine learning model in Jupyter Notebook utilizing biological health datasets 
+                                to estimate physiological aging compared to chronological age.
+                            </p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>Machine Learning</span>
+                                <span>Scikit-Learn</span>
+                                <span>Pandas</span>
+                                <span>Biomarkers</span>
+                            </div>
+                            <div class="project-footer">
+                                <button class="project-link-btn open-modal-btn" data-project="bio">
+                                    <span>Technical Specs</span> <i class="fas fa-arrow-right"></i>
+                                </button>
+                                <a href="https://github.com/asmaaelbialy" target="_blank" rel="noopener noreferrer" class="project-github-link" title="GitHub Repository">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: DEPI Data Engineering Pipelines -->
+                    <div class="project-card" data-category="data" data-project="depi">
+                        <div class="project-image-wrapper">
+                            <img src="assets/images/data-pipeline.svg" alt="DEPI Data Pipelines Architecture Mockup" class="project-img">
+                            <div class="project-overlay">
+                                <button class="btn btn-sm btn-overlay open-modal-btn" data-project="depi">
+                                    <i class="fas fa-search-plus"></i> View Details
+                                </button>
+                            </div>
+                            <span class="project-badge"><i class="fas fa-stream"></i> Data Engineering</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-metric">
+                                <i class="fas fa-check-double"></i>
+                                <span>Automated ETL Workflows</span>
+                            </div>
+                            <h3 class="project-title">DEPI Data Engineering Pipelines</h3>
+                            <p class="project-desc">
+                                Engineered end-to-end data processing workflows, automated data cleaning pipelines, and analytical scripts 
+                                under the Microsoft track of Digital Egypt Pioneers Initiative.
+                            </p>
+                            <div class="project-tags">
+                                <span>Python</span>
+                                <span>ETL Pipelines</span>
+                                <span>Data Cleaning</span>
+                                <span>MySQL</span>
+                                <span>Transformation</span>
+                            </div>
+                            <div class="project-footer">
+                                <button class="project-link-btn open-modal-btn" data-project="depi">
+                                    <span>Technical Specs</span> <i class="fas fa-arrow-right"></i>
+                                </button>
+                                <a href="https://github.com/asmaaelbialy" target="_blank" rel="noopener noreferrer" class="project-github-link" title="GitHub Repository">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Student Management System -->
+                    <div class="project-card" data-category="software" data-project="student">
+                        <div class="project-image-wrapper">
+                            <img src="assets/images/student-system.svg" alt="Student Management System Java & SQL Mockup" class="project-img">
+                            <div class="project-overlay">
+                                <button class="btn btn-sm btn-overlay open-modal-btn" data-project="student">
+                                    <i class="fas fa-search-plus"></i> View Details
+                                </button>
+                            </div>
+                            <span class="project-badge"><i class="fas fa-database"></i> Java &amp; SQL</span>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-metric">
+                                <i class="fas fa-lock"></i>
+                                <span>Secure Auth &amp; CRUD Records</span>
+                            </div>
+                            <h3 class="project-title">Student Management System</h3>
+                            <p class="project-desc">
+                                Designed a database-driven Java application featuring role-based secure login, dynamic student record management, 
+                                and indexed SQL search tools.
+                            </p>
+                            <div class="project-tags">
+                                <span>Java</span>
+                                <span>SQL</span>
+                                <span>MySQL</span>
+                                <span>Desktop GUI</span>
+                                <span>Database Design</span>
+                            </div>
+                            <div class="project-footer">
+                                <button class="project-link-btn open-modal-btn" data-project="student">
+                                    <span>Technical Specs</span> <i class="fas fa-arrow-right"></i>
+                                </button>
+                                <a href="https://github.com/asmaaelbialy" target="_blank" rel="noopener noreferrer" class="project-github-link" title="GitHub Repository">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education Timeline -->
+        <section class="section experience-section" id="experience">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fas fa-briefcase"></i> Journey</span>
+                    <h2 class="section-title">Experience &amp; <span class="gradient-text">Leadership</span></h2>
+                    <p class="section-subtitle">Hands-on industry training and academic collaborative engagements.</p>
+                </div>
+
+                <div class="timeline">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <div class="timeline-role">
+                                    <h3>Microsoft Data Engineering Trainee</h3>
+                                    <h4>Digital Egypt Pioneers Initiative (DEPI)</h4>
+                                </div>
+                                <span class="timeline-date">Feb 2026 – Present</span>
+                            </div>
+                            <ul class="timeline-points">
+                                <li>Developed data processing workflows and automated data cleaning pipelines using Python.</li>
+                                <li>Applied core data engineering concepts, database architecture, and data transformation techniques.</li>
+                                <li>Collaborated in building scalable queries and ETL data pipelines conforming to industry standards.</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span>Python</span>
+                                <span>Data Pipelines</span>
+                                <span>Data Transformation</span>
+                                <span>SQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <div class="timeline-role">
+                                    <h3>AI Project Collaborator &amp; Team Contributor</h3>
+                                    <h4>Delta University Student Team</h4>
+                                </div>
+                                <span class="timeline-date">2025 – Present</span>
+                            </div>
+                            <ul class="timeline-points">
+                                <li>Partnered with student peers to engineer AI-driven logistics solutions aimed at optimizing daily commute operations.</li>
+                                <li>Contributed to building and optimizing technical AI solutions to streamline campus transportation logistics.</li>
+                                <li>Applied collaborative teamwork and problem-solving skills to successfully deliver real-world tech projects.</li>
+                            </ul>
+                            <div class="timeline-tags">
+                                <span>AI Logistics</span>
+                                <span>Teamwork</span>
+                                <span>Problem Solving</span>
+                                <span>Route Planning</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card">
+                            <div class="timeline-header">
+                                <div class="timeline-role">
+                                    <h3>B.Sc. in Artificial Intelligence</h3>
+                                    <h4>Delta University for Science and Technology</h4>
+                                </div>
+                                <span class="timeline-date">2024 – 2028 (Expected)</span>
+                            </div>
+                            <p class="timeline-desc">
+                                Rigorous academic foundation in Artificial Intelligence, algorithms, data structures, and computer science fundamentals.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>Artificial Intelligence</span>
+                                <span>Software Development</span>
+                                <span>Data Science</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Verified Certifications -->
+        <section class="section cert-section" id="certifications">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fas fa-certificate"></i> Credentials</span>
+                    <h2 class="section-title">Verified <span class="gradient-text">Certifications</span></h2>
+                    <p class="section-subtitle">Accredited certifications across Web Development, AI, Cybersecurity, and Linux Systems.</p>
+                </div>
+
+                <div class="cert-grid">
+                    <!-- Cert 1 -->
+                    <div class="cert-card">
+                        <div class="cert-icon-box" style="color: #ef4444; background: rgba(239,68,68,0.1);">
+                            <i class="fab fa-udemy"></i>
+                        </div>
+                        <div class="cert-info">
+                            <span class="cert-issuer">Udemy • Issued Jul 2025</span>
+                            <h3>Master JavaScript, HTML, and CSS</h3>
+                            <p>30 Real-World Web Projects in 30 Days covering responsive design and DOM programming.</p>
+                        </div>
+                    </div>
+
+                    <!-- Cert 2 -->
+                    <div class="cert-card">
+                        <div class="cert-icon-box" style="color: #3b82f6; background: rgba(59,130,246,0.1);">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="cert-info">
+                            <span class="cert-issuer">BUE • Issued Sep 2025</span>
+                            <h3>Applications of Artificial Intelligence</h3>
+                            <p>The British University in Egypt. In-depth study on practical AI algorithms and implementation.</p>
+                        </div>
+                    </div>
+
+                    <!-- Cert 3 -->
+                    <div class="cert-card">
+                        <div class="cert-icon-box" style="color: #f97316; background: rgba(249,115,22,0.1);">
+                            <i class="fas fa-shield-virus"></i>
+                        </div>
+                        <div class="cert-info">
+                            <span class="cert-issuer">Palo Alto Networks • Issued May 2025</span>
+                            <h3>Cybersecurity Foundation</h3>
+                            <p>Core network security principles, threat analysis, and perimeter defense strategies.</p>
+                            <span class="cert-badge-id"><i class="fas fa-id-badge"></i> Credential ID: sXLJiMtVav</span>
+                        </div>
+                    </div>
+
+                    <!-- Cert 4 -->
+                    <div class="cert-card">
+                        <div class="cert-icon-box" style="color: #10b981; background: rgba(16,185,129,0.1);">
+                            <i class="fab fa-linux"></i>
+                        </div>
+                        <div class="cert-info">
+                            <span class="cert-issuer">NTI • Issued Nov 2025</span>
+                            <h3>Linux Administration</h3>
+                            <p>National Telecommunication Institute. Command-line mastery, user permissions, and server setup.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag"><i class="fas fa-comments"></i> Get In Touch</span>
+                    <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+                    <p class="section-subtitle">Interested in collaborating on AI models, data engineering pipelines, or recruitment opportunities?</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Cards -->
+                    <div class="contact-cards">
+                        <!-- Email Card -->
+                        <div class="contact-card">
+                            <div class="contact-icon" style="color: #00f2fe;">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Email Address</span>
+                                <a href="mailto:asmaaelbyalley@gmail.com" class="contact-value">asmaaelbyalley@gmail.com</a>
+                            </div>
+                            <button class="copy-btn" data-copy="asmaaelbyalley@gmail.com" title="Copy Email">
+                                <i class="far fa-copy"></i>
+                            </button>
+                        </div>
+
+                        <!-- LinkedIn Card -->
+                        <div class="contact-card">
+                            <div class="contact-icon" style="color: #0a66c2;">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">LinkedIn</span>
+                                <a href="https://linkedin.com/in/asmaa-elbialy" target="_blank" rel="noopener noreferrer" class="contact-value">linkedin.com/in/asmaa-elbialy</a>
+                            </div>
+                            <a href="https://linkedin.com/in/asmaa-elbialy" target="_blank" rel="noopener noreferrer" class="visit-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+
+                        <!-- WhatsApp / Phone Card -->
+                        <div class="contact-card">
+                            <div class="contact-icon" style="color: #25d366;">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">WhatsApp &amp; Phone</span>
+                                <a href="https://wa.me/201050168199" target="_blank" rel="noopener noreferrer" class="contact-value">+20 105 016 8199</a>
+                            </div>
+                            <button class="copy-btn" data-copy="+201050168199" title="Copy Phone">
+                                <i class="far fa-copy"></i>
+                            </button>
+                        </div>
+
+                        <!-- Location Card -->
+                        <div class="contact-card">
+                            <div class="contact-icon" style="color: #f59e0b;">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Egypt (Remote / Hybrid Ready)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Direct Message Box -->
+                    <div class="direct-message-box">
+                        <h3>Send a Direct Note</h3>
+                        <p>Have an inquiry or opportunity? Drop your message directly via email:</p>
+                        <form action="mailto:asmaaelbyalley@gmail.com" method="GET" enctype="text/plain" class="contact-form">
+                            <div class="form-group">
+                                <label for="sender-name">Your Name</label>
+                                <input type="text" id="sender-name" name="subject" placeholder="e.g. John Doe / Tech Recruiter" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="sender-msg">Message</label>
+                                <textarea id="sender-msg" name="body" rows="4" placeholder="Hi Asmaa, I saw your portfolio and would like to discuss..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <i class="fas fa-paper-plane"></i> Send Email
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Lightbox Modal -->
+    <div class="modal-backdrop" id="project-modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <button class="modal-close" id="modal-close" aria-label="Close modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-content" id="modal-content-area">
+                <!-- Dynamically populated by script.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">Copied to clipboard!</div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <span class="logo-bracket">&lt;</span>Asmaa Mohamed Sadallah<span class="logo-bracket">/&gt;</span>
+                <p>AI &amp; Data Engineering • Delta University &amp; Microsoft DEPI</p>
+            </div>
+            <div class="footer-socials">
+                <a href="https://linkedin.com/in/asmaa-elbialy" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/asmaaelbialy" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://wa.me/201050168199" target="_blank" rel="noopener noreferrer" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:asmaaelbyalley@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="footer-copy">
+                <p>© 2026 Asmaa Mohamed Sadallah. Engineered with high performance &amp; clean design.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
